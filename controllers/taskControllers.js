@@ -125,6 +125,6 @@ exports.deleteTask = (req, res) => {
     writeTasksToFile(updatedTasks);
     res.writeHead(200, { 'content-type': 'application/json' });
     res.end(JSON.stringify({
-        message: 'Task successfully deleted'
+        message: 'Task successfuly deleted'
     }));
 }
